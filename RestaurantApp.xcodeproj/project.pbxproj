@@ -27,6 +27,7 @@
 		C31914B42C22D7AF0031DFF6 /* MainRestaurantsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C31914B32C22D7AF0031DFF6 /* MainRestaurantsCollectionViewCell.swift */; };
 		C31914B62C22E8340031DFF6 /* DishesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C31914B52C22E8340031DFF6 /* DishesTableViewCell.swift */; };
 		C31914B82C22E8430031DFF6 /* DishesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C31914B72C22E8430031DFF6 /* DishesCollectionViewCell.swift */; };
+		C3EA38ED2C2302E100A29916 /* AuthStoryBoard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3EA38EC2C2302E100A29916 /* AuthStoryBoard.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +72,7 @@
 		C31914B32C22D7AF0031DFF6 /* MainRestaurantsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainRestaurantsCollectionViewCell.swift; sourceTree = "<group>"; };
 		C31914B52C22E8340031DFF6 /* DishesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DishesTableViewCell.swift; sourceTree = "<group>"; };
 		C31914B72C22E8430031DFF6 /* DishesCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DishesCollectionViewCell.swift; sourceTree = "<group>"; };
+		C3EA38EC2C2302E100A29916 /* AuthStoryBoard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AuthStoryBoard.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +123,7 @@
 		C319146D2C22B5F70031DFF6 /* RestaurantApp */ = {
 			isa = PBXGroup;
 			children = (
+				C3EA38EB2C2302BD00A29916 /* AuthModule */,
 				C319149E2C22C0FA0031DFF6 /* HomeModule */,
 				C319146E2C22B5F70031DFF6 /* AppDelegate.swift */,
 				C31914702C22B5F70031DFF6 /* SceneDelegate.swift */,
@@ -190,6 +193,14 @@
 				C31914722C22B5F70031DFF6 /* HomeViewController.swift */,
 			);
 			path = Screens;
+			sourceTree = "<group>";
+		};
+		C3EA38EB2C2302BD00A29916 /* AuthModule */ = {
+			isa = PBXGroup;
+			children = (
+				C3EA38EC2C2302E100A29916 /* AuthStoryBoard.storyboard */,
+			);
+			path = AuthModule;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -299,6 +310,7 @@
 				C31914782C22B5F90031DFF6 /* Assets.xcassets in Resources */,
 				C319147B2C22B5F90031DFF6 /* Base in Resources */,
 				C31914762C22B5F70031DFF6 /* Base in Resources */,
+				C3EA38ED2C2302E100A29916 /* AuthStoryBoard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
