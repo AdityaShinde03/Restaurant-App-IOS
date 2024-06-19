@@ -1,0 +1,21 @@
+{
+  "images" : [
+    {
+      "filename" : "fast-food-banner-template-design-925774928d842fc1ac0186b839a10444_screen.jpg",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
