@@ -16,6 +16,9 @@
 		C31914862C22B5F90031DFF6 /* RestaurantAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C31914852C22B5F90031DFF6 /* RestaurantAppTests.swift */; };
 		C31914902C22B5F90031DFF6 /* RestaurantAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C319148F2C22B5F90031DFF6 /* RestaurantAppUITests.swift */; };
 		C31914922C22B5F90031DFF6 /* RestaurantAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C31914912C22B5F90031DFF6 /* RestaurantAppUITestsLaunchTests.swift */; };
+		C36CC5B32C22BF5100CD9028 /* AuthStoryBoard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C36CC5B22C22BF5100CD9028 /* AuthStoryBoard.storyboard */; };
+		C36CC5B72C22C08900CD9028 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C36CC5B62C22C08900CD9028 /* LoginViewController.swift */; };
+		C36CC5B92C22E14E00CD9028 /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C36CC5B82C22E14E00CD9028 /* SignupViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +52,9 @@
 		C319148B2C22B5F90031DFF6 /* RestaurantAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RestaurantAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C319148F2C22B5F90031DFF6 /* RestaurantAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantAppUITests.swift; sourceTree = "<group>"; };
 		C31914912C22B5F90031DFF6 /* RestaurantAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		C36CC5B22C22BF5100CD9028 /* AuthStoryBoard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AuthStoryBoard.storyboard; sourceTree = "<group>"; };
+		C36CC5B62C22C08900CD9028 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		C36CC5B82C22E14E00CD9028 /* SignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +105,7 @@
 		C319146D2C22B5F70031DFF6 /* RestaurantApp */ = {
 			isa = PBXGroup;
 			children = (
+				C36CC5B42C22C05000CD9028 /* AuthModule */,
 				C319146E2C22B5F70031DFF6 /* AppDelegate.swift */,
 				C31914702C22B5F70031DFF6 /* SceneDelegate.swift */,
 				C31914722C22B5F70031DFF6 /* ViewController.swift */,
@@ -106,6 +113,7 @@
 				C31914772C22B5F90031DFF6 /* Assets.xcassets */,
 				C31914792C22B5F90031DFF6 /* LaunchScreen.storyboard */,
 				C319147C2C22B5F90031DFF6 /* Info.plist */,
+				C36CC5B22C22BF5100CD9028 /* AuthStoryBoard.storyboard */,
 			);
 			path = RestaurantApp;
 			sourceTree = "<group>";
@@ -125,6 +133,23 @@
 				C31914912C22B5F90031DFF6 /* RestaurantAppUITestsLaunchTests.swift */,
 			);
 			path = RestaurantAppUITests;
+			sourceTree = "<group>";
+		};
+		C36CC5B42C22C05000CD9028 /* AuthModule */ = {
+			isa = PBXGroup;
+			children = (
+				C36CC5B52C22C07300CD9028 /* Screens */,
+			);
+			path = AuthModule;
+			sourceTree = "<group>";
+		};
+		C36CC5B52C22C07300CD9028 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				C36CC5B62C22C08900CD9028 /* LoginViewController.swift */,
+				C36CC5B82C22E14E00CD9028 /* SignupViewController.swift */,
+			);
+			path = Screens;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -234,6 +259,7 @@
 				C31914782C22B5F90031DFF6 /* Assets.xcassets in Resources */,
 				C319147B2C22B5F90031DFF6 /* Base in Resources */,
 				C31914762C22B5F70031DFF6 /* Base in Resources */,
+				C36CC5B32C22BF5100CD9028 /* AuthStoryBoard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,7 +284,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C36CC5B72C22C08900CD9028 /* LoginViewController.swift in Sources */,
 				C31914732C22B5F70031DFF6 /* ViewController.swift in Sources */,
+				C36CC5B92C22E14E00CD9028 /* SignupViewController.swift in Sources */,
 				C319146F2C22B5F70031DFF6 /* AppDelegate.swift in Sources */,
 				C31914712C22B5F70031DFF6 /* SceneDelegate.swift in Sources */,
 			);
@@ -449,6 +477,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -476,6 +505,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
