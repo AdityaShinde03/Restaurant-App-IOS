@@ -34,6 +34,12 @@ class LoginViewController: UIViewController {
         
     }
     
+    func moveToHomeScreen(){
+        let home = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "HomeViewController") as! HomeViewController
+        
+        self.navigationController?.pushViewController(home, animated: true)
+    }
+    
     
     @IBAction func onLoginBtnPressed(_ sender: Any) {
         let userEnteredEmail = tfUserEmail.text!
@@ -42,7 +48,7 @@ class LoginViewController: UIViewController {
         if  userEnteredEmail.isValidEmail() && userEnteredPassword.isValidPassword(){
             
             if  (userEnteredEmail == UserDefaults.standard.string(forKey: "userEmail")) && (userEnteredPassword == UserDefaults.standard.string(forKey: "userPassword")){
-
+                moveToHomeScreen()
                 print("User Logged In !!!")
             }else{
                 showAlertBox(title: "Invalid Credentials", message: "Please enter valid credentials to login.")
