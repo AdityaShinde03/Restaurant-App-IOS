@@ -1,0 +1,21 @@
+{
+  "images" : [
+    {
+      "filename" : "food-banner-design-template-d7ab18619a4b9707dd4864570a3131b7_screen.jpg",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
